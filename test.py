@@ -4,12 +4,14 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 import networkx as nx
 import geopandas as gpd
+import pandas as pd
 import random
-
+df = pd.read_csv("geobase.csv")
+print(df)
 import utils
 from Drone import Drone
 from utils import nb_Km
-visited = {}
+"""visited = {}
 
 place_name = [{"city": "Outremont", "state": "Montreal", "country": "Canada"}]
               #{"city": "Verdun", "state": "Montreal", "country": "Canada"},
@@ -101,4 +103,4 @@ print("size = ", utils.size(graph))
 for edge in graph.edges():
     print(edge)
 
-
+"""
