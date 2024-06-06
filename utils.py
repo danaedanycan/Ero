@@ -1,6 +1,7 @@
 import math
 
 import osmnx.stats
+from enum import Enum
 
 
 def nb_Km(lat1,lon1,lat2,lon2):
@@ -46,3 +47,16 @@ def filterSet(predicate, iterable):
     for x in iterable:
         if predicate(x):
             yield x
+
+
+
+
+# Création d'un dictionnaire avec des paires clé-valeur
+Secteurs = {
+    1: "Montréal, Canada",
+    2: "Outremont, Montréal, Canada",
+    3: "Verdun, Montréal, Canada",
+    4: "Anjou, Montréal, Canada",
+    5: "Rivière-des-prairies-pointe-aux-trembles, Montréal, Canada",
+    6: "Le Plateau-Mont-Royal, Montréal, Canada"
+}

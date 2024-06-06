@@ -2,16 +2,18 @@ import networkx as nx
 import osmnx as ox
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
-import networkx as nx
 import geopandas as gpd
 import pandas as pd
 import random
-df = pd.read_csv("geobase.csv")
-print(df)
+
 import utils
+from Vehicules import Vehicule
+
 from Drone import Drone
 from utils import nb_Km
-"""visited = {}
+
+  
+visited = {}
 
 place_name = [{"city": "Outremont", "state": "Montreal", "country": "Canada"}]
               #{"city": "Verdun", "state": "Montreal", "country": "Canada"},
@@ -20,8 +22,8 @@ place_name = [{"city": "Outremont", "state": "Montreal", "country": "Canada"}]
               #{"city": "Le Plateau-Mont-Royal", "state": "Montreal", "country": "Canada"}]
 
 graph = ox.graph_from_place(place_name, network_type="drive", retain_all=True)
-
-for u, v, key, data in graph.edges(keys=True, data=True):
+graph.get_edge_data
+"""for u, v, key, data in graph.edges(keys=True, data=True):
     data['lanes'] = random.uniform(2.5, 15) # height of snow = weight of the edge
     data['name'] = False # boolean weather the edge was visited or not
 
@@ -101,6 +103,5 @@ plt.show()
 print("size = ", utils.size(graph))
 
 for edge in graph.edges():
-    print(edge)
+    print(edge)"""
 
-"""
